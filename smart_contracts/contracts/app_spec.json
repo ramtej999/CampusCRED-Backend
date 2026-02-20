@@ -1,0 +1,142 @@
+{
+    "hints": {
+        "request_loan(uint64,uint64)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "fund_loan(account)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "repay_loan()void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "liquidate_loan(account)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMSAyCmJ5dGVjYmxvY2sgMHg2YzZmNjE2ZTVmNzM3NDYxNzQ3NTczIDB4NjE2Mzc0Njk3NjY1NWY2YzZmNjE2ZTczIDB4NmM2ZjYxNmU1ZjYxNmQ2Zjc1NmU3NCAweDY0NzU2NTVmNjQ2MTc0NjUgMHg2YzY1NmU2NDY1NzIgMHg3NDZmNzQ2MTZjNWY2YzZmNjE2ZTczIDB4CnR4biBOdW1BcHBBcmdzCmludGNfMCAvLyAwCj09CmJueiBtYWluX2wxMAp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDdmMzY3NjAxIC8vICJyZXF1ZXN0X2xvYW4odWludDY0LHVpbnQ2NCl2b2lkIgo9PQpibnogbWFpbl9sOQp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDQ5MzBhMDkzIC8vICJmdW5kX2xvYW4oYWNjb3VudCl2b2lkIgo9PQpibnogbWFpbl9sOAp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDA1Nzk1ZTkzIC8vICJyZXBheV9sb2FuKCl2b2lkIgo9PQpibnogbWFpbl9sNwp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweGY1MTA2YTBhIC8vICJsaXF1aWRhdGVfbG9hbihhY2NvdW50KXZvaWQiCj09CmJueiBtYWluX2w2CmVycgptYWluX2w2Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydApjYWxsc3ViIGxpcXVpZGF0ZWxvYW5jYXN0ZXJfOQppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNzoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiByZXBheWxvYW5jYXN0ZXJfOAppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sODoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiBmdW5kbG9hbmNhc3Rlcl83CmludGNfMSAvLyAxCnJldHVybgptYWluX2w5Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydApjYWxsc3ViIHJlcXVlc3Rsb2FuY2FzdGVyXzYKaW50Y18xIC8vIDEKcmV0dXJuCm1haW5fbDEwOgp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CmJueiBtYWluX2wxNAp0eG4gT25Db21wbGV0aW9uCmludGNfMSAvLyBPcHRJbgo9PQpibnogbWFpbl9sMTMKZXJyCm1haW5fbDEzOgp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQphc3NlcnQKY2FsbHN1YiBvcHRpbl8xCmludGNfMSAvLyAxCnJldHVybgptYWluX2wxNDoKdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18wIC8vIDAKPT0KYXNzZXJ0CmNhbGxzdWIgY3JlYXRlXzAKaW50Y18xIC8vIDEKcmV0dXJuCgovLyBjcmVhdGUKY3JlYXRlXzA6CnByb3RvIDAgMApieXRlY18xIC8vICJhY3RpdmVfbG9hbnMiCmludGNfMCAvLyAwCmFwcF9nbG9iYWxfcHV0CnB1c2hieXRlcyAweDcwNmM2MTc0NjY2ZjcyNmQ1ZjY2NjU2NSAvLyAicGxhdGZvcm1fZmVlIgppbnRjXzAgLy8gMAphcHBfZ2xvYmFsX3B1dApieXRlYyA1IC8vICJ0b3RhbF9sb2FucyIKaW50Y18wIC8vIDAKYXBwX2dsb2JhbF9wdXQKcmV0c3ViCgovLyBvcHRfaW4Kb3B0aW5fMToKcHJvdG8gMCAwCnR4biBTZW5kZXIKYnl0ZWNfMyAvLyAiZHVlX2RhdGUiCmludGNfMCAvLyAwCmFwcF9sb2NhbF9wdXQKdHhuIFNlbmRlcgpieXRlYyA0IC8vICJsZW5kZXIiCmJ5dGVjIDYgLy8gIiIKYXBwX2xvY2FsX3B1dAp0eG4gU2VuZGVyCmJ5dGVjXzIgLy8gImxvYW5fYW1vdW50IgppbnRjXzAgLy8gMAphcHBfbG9jYWxfcHV0CnR4biBTZW5kZXIKYnl0ZWNfMCAvLyAibG9hbl9zdGF0dXMiCmludGNfMCAvLyAwCmFwcF9sb2NhbF9wdXQKcmV0c3ViCgovLyByZXF1ZXN0X2xvYW4KcmVxdWVzdGxvYW5fMjoKcHJvdG8gMiAwCnR4biBTZW5kZXIKYnl0ZWNfMCAvLyAibG9hbl9zdGF0dXMiCmFwcF9sb2NhbF9nZXQKaW50Y18wIC8vIDAKPT0KYXNzZXJ0CnR4biBTZW5kZXIKYnl0ZWNfMiAvLyAibG9hbl9hbW91bnQiCmZyYW1lX2RpZyAtMgphcHBfbG9jYWxfcHV0CnR4biBTZW5kZXIKYnl0ZWNfMCAvLyAibG9hbl9zdGF0dXMiCmludGNfMSAvLyAxCmFwcF9sb2NhbF9wdXQKdHhuIFNlbmRlcgpieXRlY18zIC8vICJkdWVfZGF0ZSIKZ2xvYmFsIExhdGVzdFRpbWVzdGFtcApmcmFtZV9kaWcgLTEKKwphcHBfbG9jYWxfcHV0CmJ5dGVjXzEgLy8gImFjdGl2ZV9sb2FucyIKYnl0ZWNfMSAvLyAiYWN0aXZlX2xvYW5zIgphcHBfZ2xvYmFsX2dldAppbnRjXzEgLy8gMQorCmFwcF9nbG9iYWxfcHV0CmJ5dGVjIDUgLy8gInRvdGFsX2xvYW5zIgpieXRlYyA1IC8vICJ0b3RhbF9sb2FucyIKYXBwX2dsb2JhbF9nZXQKaW50Y18xIC8vIDEKKwphcHBfZ2xvYmFsX3B1dApyZXRzdWIKCi8vIGZ1bmRfbG9hbgpmdW5kbG9hbl8zOgpwcm90byAxIDAKZnJhbWVfZGlnIC0xCnR4bmFzIEFjY291bnRzCmJ5dGVjXzAgLy8gImxvYW5fc3RhdHVzIgphcHBfbG9jYWxfZ2V0CmludGNfMSAvLyAxCj09CmFzc2VydApndHhuIDAgVHlwZUVudW0KaW50Y18xIC8vIHBheQo9PQphc3NlcnQKZ3R4biAwIFJlY2VpdmVyCmZyYW1lX2RpZyAtMQp0eG5hcyBBY2NvdW50cwo9PQphc3NlcnQKZ3R4biAwIEFtb3VudApmcmFtZV9kaWcgLTEKdHhuYXMgQWNjb3VudHMKYnl0ZWNfMiAvLyAibG9hbl9hbW91bnQiCmFwcF9sb2NhbF9nZXQKPT0KYXNzZXJ0CmZyYW1lX2RpZyAtMQp0eG5hcyBBY2NvdW50cwpieXRlY18wIC8vICJsb2FuX3N0YXR1cyIKaW50Y18yIC8vIDIKYXBwX2xvY2FsX3B1dApmcmFtZV9kaWcgLTEKdHhuYXMgQWNjb3VudHMKYnl0ZWMgNCAvLyAibGVuZGVyIgp0eG4gU2VuZGVyCmFwcF9sb2NhbF9wdXQKcmV0c3ViCgovLyByZXBheV9sb2FuCnJlcGF5bG9hbl80Ogpwcm90byAwIDAKdHhuIFNlbmRlcgpieXRlY18wIC8vICJsb2FuX3N0YXR1cyIKYXBwX2xvY2FsX2dldAppbnRjXzIgLy8gMgo9PQphc3NlcnQKZ3R4biAwIFR5cGVFbnVtCmludGNfMSAvLyBwYXkKPT0KYXNzZXJ0Cmd0eG4gMCBSZWNlaXZlcgp0eG4gU2VuZGVyCmJ5dGVjIDQgLy8gImxlbmRlciIKYXBwX2xvY2FsX2dldAo9PQphc3NlcnQKZ3R4biAwIEFtb3VudAp0eG4gU2VuZGVyCmJ5dGVjXzIgLy8gImxvYW5fYW1vdW50IgphcHBfbG9jYWxfZ2V0Cj49CmFzc2VydAp0eG4gU2VuZGVyCmJ5dGVjXzAgLy8gImxvYW5fc3RhdHVzIgpwdXNoaW50IDMgLy8gMwphcHBfbG9jYWxfcHV0CnR4biBTZW5kZXIKYnl0ZWNfMiAvLyAibG9hbl9hbW91bnQiCmludGNfMCAvLyAwCmFwcF9sb2NhbF9wdXQKdHhuIFNlbmRlcgpieXRlYyA0IC8vICJsZW5kZXIiCmJ5dGVjIDYgLy8gIiIKYXBwX2xvY2FsX3B1dAp0eG4gU2VuZGVyCmJ5dGVjXzMgLy8gImR1ZV9kYXRlIgppbnRjXzAgLy8gMAphcHBfbG9jYWxfcHV0CmJ5dGVjXzEgLy8gImFjdGl2ZV9sb2FucyIKYnl0ZWNfMSAvLyAiYWN0aXZlX2xvYW5zIgphcHBfZ2xvYmFsX2dldAppbnRjXzEgLy8gMQotCmFwcF9nbG9iYWxfcHV0CnJldHN1YgoKLy8gbGlxdWlkYXRlX2xvYW4KbGlxdWlkYXRlbG9hbl81Ogpwcm90byAxIDAKZnJhbWVfZGlnIC0xCnR4bmFzIEFjY291bnRzCmJ5dGVjXzAgLy8gImxvYW5fc3RhdHVzIgphcHBfbG9jYWxfZ2V0CmludGNfMiAvLyAyCj09CmFzc2VydApnbG9iYWwgTGF0ZXN0VGltZXN0YW1wCmZyYW1lX2RpZyAtMQp0eG5hcyBBY2NvdW50cwpieXRlY18zIC8vICJkdWVfZGF0ZSIKYXBwX2xvY2FsX2dldAo+CmFzc2VydApmcmFtZV9kaWcgLTEKdHhuYXMgQWNjb3VudHMKYnl0ZWNfMCAvLyAibG9hbl9zdGF0dXMiCnB1c2hpbnQgNCAvLyA0CmFwcF9sb2NhbF9wdXQKZnJhbWVfZGlnIC0xCnR4bmFzIEFjY291bnRzCmJ5dGVjXzIgLy8gImxvYW5fYW1vdW50IgppbnRjXzAgLy8gMAphcHBfbG9jYWxfcHV0CmZyYW1lX2RpZyAtMQp0eG5hcyBBY2NvdW50cwpieXRlYyA0IC8vICJsZW5kZXIiCmJ5dGVjIDYgLy8gIiIKYXBwX2xvY2FsX3B1dApmcmFtZV9kaWcgLTEKdHhuYXMgQWNjb3VudHMKYnl0ZWNfMyAvLyAiZHVlX2RhdGUiCmludGNfMCAvLyAwCmFwcF9sb2NhbF9wdXQKYnl0ZWNfMSAvLyAiYWN0aXZlX2xvYW5zIgpieXRlY18xIC8vICJhY3RpdmVfbG9hbnMiCmFwcF9nbG9iYWxfZ2V0CmludGNfMSAvLyAxCi0KYXBwX2dsb2JhbF9wdXQKcmV0c3ViCgovLyByZXF1ZXN0X2xvYW5fY2FzdGVyCnJlcXVlc3Rsb2FuY2FzdGVyXzY6CnByb3RvIDAgMAppbnRjXzAgLy8gMApkdXAKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQpidG9pCmZyYW1lX2J1cnkgMAp0eG5hIEFwcGxpY2F0aW9uQXJncyAyCmJ0b2kKZnJhbWVfYnVyeSAxCmZyYW1lX2RpZyAwCmZyYW1lX2RpZyAxCmNhbGxzdWIgcmVxdWVzdGxvYW5fMgpyZXRzdWIKCi8vIGZ1bmRfbG9hbl9jYXN0ZXIKZnVuZGxvYW5jYXN0ZXJfNzoKcHJvdG8gMCAwCmludGNfMCAvLyAwCnR4bmEgQXBwbGljYXRpb25BcmdzIDEKaW50Y18wIC8vIDAKZ2V0Ynl0ZQpmcmFtZV9idXJ5IDAKZnJhbWVfZGlnIDAKY2FsbHN1YiBmdW5kbG9hbl8zCnJldHN1YgoKLy8gcmVwYXlfbG9hbl9jYXN0ZXIKcmVwYXlsb2FuY2FzdGVyXzg6CnByb3RvIDAgMApjYWxsc3ViIHJlcGF5bG9hbl80CnJldHN1YgoKLy8gbGlxdWlkYXRlX2xvYW5fY2FzdGVyCmxpcXVpZGF0ZWxvYW5jYXN0ZXJfOToKcHJvdG8gMCAwCmludGNfMCAvLyAwCnR4bmEgQXBwbGljYXRpb25BcmdzIDEKaW50Y18wIC8vIDAKZ2V0Ynl0ZQpmcmFtZV9idXJ5IDAKZnJhbWVfZGlnIDAKY2FsbHN1YiBsaXF1aWRhdGVsb2FuXzUKcmV0c3Vi",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 3
+        },
+        "local": {
+            "num_byte_slices": 1,
+            "num_uints": 3
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "active_loans": {
+                    "type": "uint64",
+                    "key": "active_loans",
+                    "descr": ""
+                },
+                "platform_fee": {
+                    "type": "uint64",
+                    "key": "platform_fee",
+                    "descr": ""
+                },
+                "total_loans": {
+                    "type": "uint64",
+                    "key": "total_loans",
+                    "descr": ""
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {
+                "due_date": {
+                    "type": "uint64",
+                    "key": "due_date",
+                    "descr": ""
+                },
+                "lender": {
+                    "type": "bytes",
+                    "key": "lender",
+                    "descr": ""
+                },
+                "loan_amount": {
+                    "type": "uint64",
+                    "key": "loan_amount",
+                    "descr": ""
+                },
+                "loan_status": {
+                    "type": "uint64",
+                    "key": "loan_status",
+                    "descr": ""
+                }
+            },
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "P2PLending",
+        "methods": [
+            {
+                "name": "request_loan",
+                "args": [
+                    {
+                        "type": "uint64",
+                        "name": "amount"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "duration"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "fund_loan",
+                "args": [
+                    {
+                        "type": "account",
+                        "name": "borrower"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "repay_loan",
+                "args": [],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "liquidate_loan",
+                "args": [
+                    {
+                        "type": "account",
+                        "name": "borrower"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE",
+        "opt_in": "CALL"
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "name": "P2PLending",
+    "methods": [
+        {
+            "name": "create_loan",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "loan_id"
+                },
+                {
+                    "type": "account",
+                    "name": "lender"
+                },
+                {
+                    "type": "account",
+                    "name": "borrower"
+                },
+                {
+                    "type": "uint64",
+                    "name": "amount"
+                },
+                {
+                    "type": "uint64",
+                    "name": "deadline"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "repay_loan",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "loan_id"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "mark_default",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "loan_id"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "get_user_reputation",
+            "args": [
+                {
+                    "type": "account",
+                    "name": "user"
+                }
+            ],
+            "returns": {
+                "type": "(uint64,uint64,uint64)"
+            }
+        }
+    ],
+    "networks": {}
+}

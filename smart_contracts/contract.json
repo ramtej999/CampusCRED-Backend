@@ -1,0 +1,53 @@
+{
+    "name": "P2PLending",
+    "methods": [
+        {
+            "name": "request_loan",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "amount"
+                },
+                {
+                    "type": "uint64",
+                    "name": "duration"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "fund_loan",
+            "args": [
+                {
+                    "type": "account",
+                    "name": "borrower"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "repay_loan",
+            "args": [],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "liquidate_loan",
+            "args": [
+                {
+                    "type": "account",
+                    "name": "borrower"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        }
+    ],
+    "networks": {}
+}
